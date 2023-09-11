@@ -10,6 +10,7 @@ import { footerNav } from "../../data";
 import MainButton from "../main-button/MainButton";
 import btnArrowIcon from "../../assets/footer/btn-arrow-icon.svg";
 import inputIcon from "../../assets/footer/input-icon.svg";
+import BottomFooter from "./BottomFooter";
 
 const Footer = () => {
   return (
@@ -58,7 +59,24 @@ const Footer = () => {
             },
           }}
         >
-          <img src={logo} alt="" />
+          <Typography
+            sx={{
+              mt: 3,
+              mb: 4,
+              fontFamily: "Poppins",
+              fontWeight: "400",
+              fontSize: "13px",
+              lineHeight: "19.5px",
+              color: "#5B5B5B",
+              textAlign: {
+                xs: "center",
+                lg: "left",
+              },
+            }}
+          >
+            ANGLEVIEW
+          </Typography>
+          {/* <img src={logo} alt="" /> */}
           <Typography
             sx={{
               mt: 3,
@@ -229,7 +247,9 @@ const Footer = () => {
           </Box>
         </Box>
       </Container>
+      <BottomFooter/>
     </Box>
+
   );
 };
 

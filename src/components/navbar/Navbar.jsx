@@ -27,7 +27,11 @@ const Navbar = () => {
         }}
         disableGutters
       >
-        <img src={logo} alt="logo" style={{ cursor: "pointer" }} />
+        <Typography variant="h5" sx={{ fontWeight: "bold", color: "#161414", mt: 1 }}>
+        ANTINO LABS
+      </Typography>
+        {/* <Typography >ANTINO LABS</Typography> */}
+        {/* <img src={logo} alt="logo" style={{ cursor: "pointer" }} /> */}
         <Box
           sx={{
             display: {
